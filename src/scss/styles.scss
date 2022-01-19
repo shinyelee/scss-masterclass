@@ -1,10 +1,39 @@
 @import "_variables";
 
-body {
-  background-color: $bg;
-}
-
-h1 {
+h2 {
   color: $bg;
   font-size: $title;
+}
+
+// .box {
+//   margin-top: 20px;
+// }
+// .box:hover {
+//   background-color: green;
+// }
+// .box h2 {
+//   color: blue;
+// }
+// .box h2:hover {
+//   color: red;
+// }
+// .box button {
+//   color: red;
+// }
+
+// after nesting
+.box {
+  margin-top: 20px;
+  &:hover {
+    background-color: green;
+  }
+  h2 {
+    color: blue;
+    &:hover {
+      color: red;
+    }
+  }
+  button {
+    color: red;
+  }
 }
