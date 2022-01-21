@@ -1,10 +1,24 @@
 @import "_variables";
 
+body {
+  display: flex;
+  height: 500vh;
+}
+
+main {
+  background-color: $red-l;
+  color: $white;
+  width: 100%;
+}
+
 header {
   background-color: $gray-l;
   color: $red-l;
+  z-index: 1;
+  position: sticky;
+  top: 0;
   width: 30%;
-  height: 100vh;
+  height: 850px;
   padding: 90px 60px 30px 60px;
   display: flex;
   flex-direction: column;
@@ -27,6 +41,7 @@ header {
       a {
         span {
           color: $gray-d;
+          border-bottom: 1px solid $gray-d;
           &:hover {
             color: $black;
           }
