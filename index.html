@@ -47,20 +47,30 @@
       <section class="movie">
         <h2 class="movie__title">The Descent (2005)</h2>
         <span class="movie__director">Directed by Neil Marshall</div>
-        <div class="movie__play">
-          <div class="movie__play__num">
-            <span>#43</span>
+        <div class="movie__play"><!-- 넘버, 스크롤 포함 -->
+          <div class="movie__play__screen"><!-- 실제 스크린 -->
+            <div class="movie__play__screen__num">
+              <span>#43</span>
+            </div>
           </div>
-          <div class="movie__play__scroll">
-            <div class="movie__play__scroll__up">👍🏻</div>
-            <div class="movie__play__scroll__num">5</div>
-            <div class="movie__play__scroll__down">👎🏻</div>
+          <div class="movie__play__scroll"><!-- 스크롤(좋아요/싫어요) -->
+            <div class="movie__play__scroll__up">
+              <span>👍🏻</span>
+            </div>
+            <div class="movie__play__scroll__num">
+              <span>5</span>
+            </div>
+            <div class="movie__play__scroll__down">
+              <span>👎🏻</span>
+            </div>
           </div>
         </div>
-        <div class="movie__rating">My rating: 9/10</div>
+        <div class="movie__rating">
+          <span>My rating: 9/10</span>
+        </div>
         <div class="movie__comment">
           <span class="movie__comment__no">No Comments</span>
-          <span class="movie__comment__leave">💬Leave a Comment</span>
+          <span class="movie__comment__leave">💬<u>Leave a Comment</u></span>
         </div>
       </section>
     </main>
