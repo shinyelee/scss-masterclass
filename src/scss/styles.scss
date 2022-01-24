@@ -98,6 +98,7 @@ h1 {
     width: $bhs-width-fixed;
     height: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
@@ -152,5 +153,29 @@ h1 {
     justify-content: center;
     color: $white;
     background-color: $bhs-red-l;
+    .bhs-main__nav {
+      width: 67%;
+      height: 15%;
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: $white;
+      background-color: $bhs-red-m;
+      opacity: 0.9;
+      .bhs-main__nav__wrap {
+        a {
+          margin: 0 5px;
+          padding: 0 0 3px 0;
+          border-bottom: 1px solid;
+          color: $bhs-red-d;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
   }
 }
