@@ -1,5 +1,11 @@
 @import "_variables";
 
+// all
+h1 {
+  text-transform: uppercase;
+}
+
+// index
 .header {
   font-size: 40px;
   font-weight: 600;
@@ -8,7 +14,6 @@
   height: 60px;
   margin: 20px 0;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -21,6 +26,9 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    h2 {
+      text-transform: uppercase;
+    }
     img {
       width: 250px;
       height: 300px;
@@ -79,5 +87,70 @@
     img {
       width: 280px;
     }
+  }
+}
+
+// best-horror-scenes
+.bhs-body {
+  display: flex;
+  font-weight: 600;
+  .bhs-header {
+    width: $bhs-width-fixed;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $bhs-red-l;
+    background-color: $bhs-white;
+    .bhs-header__title,
+    .bhs-header__subtitle {
+      margin: 60px;
+    }
+    .bhs-header__subtitle__1,
+    .bhs-header__subtitle__2,
+    .bhs-header__subtitle__3,
+    .bhs-header__subtitle__4 {
+      margin-top: 20px;
+    }
+    .bhs-header__title {
+      font-size: 60px;
+    }
+    .bhs-header__subtitle__1 {
+      font-size: 24px;
+    }
+    .bhs-header__subtitle__2 {
+      font-size: 18px;
+    }
+    .bhs-header__subtitle__3 {
+      display: inline-block;
+      .bhs-header__subtitle__3__menu {
+        margin-bottom: 10px;
+        border: 0;
+        a {
+          padding-bottom: 3px;
+          border-bottom: 1px solid;
+          font-size: 14px;
+          color: $bhs-gray;
+          &:hover {
+            color: $bhs-black;
+          }
+        }
+      }
+    }
+    .bhs-header__subtitle__4 {
+      color: $bhs-gray;
+    }
+  }
+  .bhs-main {
+    margin-left: $bhs-width-fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background-color: $bhs-red-l;
   }
 }
