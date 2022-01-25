@@ -322,30 +322,26 @@ title,
 .rda-body {
   display: grid;
   grid-template-columns: 1fr 4fr; // rda-logo : rda-main
-  border: 3px solid blue;
   a:hover,
+  .rda-logo:hover,
   .rda-main__content--with-photo:hover {
-    color: blue;
+    color: $rda-blue;
   }
   @media (max-width: 720px) {
+    .rda-logo {
+      visibility: hidden;
+    }
     .rda-main {
-      grid-column: 1 / 3;
+      grid-area: 1 / 1 / 3 / 3;
     }
   }
   .rda-logo {
-    border: 3px solid green;
     height: 50px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-weight: 600;
-    color: black;
-    a {
-      span {
-        color: gray;
-      }
-    }
   }
   .rda-main {
     display: grid;
@@ -356,12 +352,9 @@ title,
         grid-column: 1 / 3;
       }
     }
-    border: 3px solid green;
     .rda-main__nav {
-      border: 3px solid red;
       grid-column: span 2;
       height: 50px;
-      padding: 10px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -371,18 +364,8 @@ title,
           margin-right: 10px;
         }
       }
-      // .rda-main__nav__mobile {
-      //   border: 1px solid red;
-      //   .rda-main__nav__mobile__menu {
-      //     border: 1px solid black;
-      //   }
-      //   .rda-main__nav__mobile__close {
-      //     border: 1px solid black;
-      //   }
-      // }
     }
     .rda-main__content {
-      border: 3px solid red;
       img {
         max-width: 100%;
         height: auto;
