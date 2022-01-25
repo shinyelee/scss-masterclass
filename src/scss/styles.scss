@@ -1,88 +1,91 @@
 @import "_variables";
 
 // all
+title,
 .uppercase {
   text-transform: uppercase;
 }
 
 // index
-.header {
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  justify-self: center;
-  height: 60px;
-  margin: 20px 0;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 400px;
-  color: $white;
-  .box {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+.index-body {
+  .header {
+    font-size: 40px;
+    font-weight: 600;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    img {
-      width: 250px;
-      height: 300px;
-      object-fit: cover;
-    }
+    justify-self: center;
+    height: 60px;
+    margin: 20px 0;
   }
-  .best-horror-scenes {
-    background-color: $bhs-red-l;
-    &:hover {
-      background-color: $bhs-red-d;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 400px;
+    color: $white;
+    .box {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
       img {
-        box-shadow: 0px 15px 20px -5px $bhs-black;
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
       }
     }
-  }
-  .paint-box {
-    background-color: $pb-beige-d;
-    img {
-      transform: scale(1);
-      transition: transform 0.5s;
+    .best-horror-scenes {
+      background-color: $bhs-red-l;
       &:hover {
-        transform: scale(1.25);
-        transition: transform 0.5s;
+        background-color: $bhs-red-d;
+        img {
+          box-shadow: 0px 15px 20px -5px $bhs-black;
+        }
       }
     }
-  }
-  .ten-nineteen {
-    background-color: $tn-gold;
-  }
-  .accueil-zoo {
-    background-color: $az-gray;
-  }
-  .schwartz-media {
-    background-color: $sm-charcoal;
-  }
-  .tolv {
-    background-color: $t-orange;
-  }
-  .rodic-davidson-architects {
-    background-color: $rda-blue;
-  }
-  .beige {
-    background-color: $b-olive;
-  }
-  .donica-ida-design {
-    background-color: $did-gray;
-  }
-  .canal-street-market {
-    background-color: $csm-yellow;
-  }
-  .won-hundred {
-    background-color: $wh-black;
-  }
-  .shinyelee {
-    color: $black;
-    img {
-      width: 280px;
+    .paint-box {
+      background-color: $pb-beige-d;
+      img {
+        transform: scale(1);
+        transition: transform 0.5s;
+        &:hover {
+          transform: scale(1.25);
+          transition: transform 0.5s;
+        }
+      }
+    }
+    .ten-nineteen {
+      background-color: $tn-gold;
+    }
+    .accueil-zoo {
+      background-color: $az-gray;
+    }
+    .schwartz-media {
+      background-color: $sm-charcoal;
+    }
+    .tolv {
+      background-color: $t-orange;
+    }
+    .rodic-davidson-architects {
+      background-color: $rda-blue;
+    }
+    .beige {
+      background-color: $b-olive;
+    }
+    .donica-ida-design {
+      background-color: $did-gray;
+    }
+    .canal-street-market {
+      background-color: $csm-yellow;
+    }
+    .won-hundred {
+      background-color: $wh-black;
+    }
+    .shinyelee {
+      color: $black;
+      img {
+        width: 280px;
+      }
     }
   }
 }
@@ -167,7 +170,7 @@
       border-bottom: 1px solid $bhs-red-d;
       color: $white;
       background-color: $bhs-red-l;
-      opacity: 0.9;
+      opacity: 0.95;
       .bhs-main__nav__wrap {
         padding: 20px;
         a {
@@ -181,7 +184,7 @@
         }
       }
     }
-    section {
+    .bhs-main-section {
       width: 100%;
       height: 100%;
       .bhs-main__box {
@@ -306,6 +309,57 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// rodic-davison-architects
+.rda-body {
+  .rda-header {
+    border: 1px solid yellow;
+    .rda-header__logo {
+      border: 1px solid green;
+    }
+    .rda-header__nav {
+      border: 1px solid green;
+      .rda-header__nav__ul {
+        border: 1px solid blue;
+        .rda-header__nav__ul__li {
+        }
+      }
+      // .rda-header__nav__mobile {
+      //   border: 1px solid blue;
+      //   .rda-header__nav__mobile__menu {
+      //   }
+      //   .rda-header__nav__mobile__close {
+      //   }
+      // }
+    }
+  }
+  .rda-main {
+    border: 1px solid yellow;
+    .rda-main__left {
+      border: 1px solid green;
+    }
+    .rda-main__right {
+      border: 1px solid green;
+      .rda-main__right__article {
+        border: 1px solid blue;
+        .rda-main__right__article__title {
+          border: 1px solid purple;
+        }
+        .rda-main__right__article__text {
+          border: 1px solid purple;
+        }
+      }
+      .rda-main__right__box {
+        .rda-main__right__box__img {
+          border: 1px solid purple;
+        }
+        .rda-main__right__box__text {
+          border: 1px solid purple;
         }
       }
     }
