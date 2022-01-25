@@ -1,7 +1,7 @@
 @import "_variables";
 
 // all
-h1 {
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -26,9 +26,6 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    h2 {
-      text-transform: uppercase;
-    }
     img {
       width: 250px;
       height: 300px;
@@ -107,9 +104,11 @@ h1 {
     justify-content: space-between;
     color: $bhs-red-l;
     background-color: $bhs-white;
-    .bhs-header__title,
+    .bhs-header__title {
+      margin: 60px 60px 0 60px;
+    }
     .bhs-header__subtitle {
-      margin: 60px;
+      margin: 0 60px 60px 60px;
     }
     .bhs-header__subtitle__1,
     .bhs-header__subtitle__2,
@@ -165,7 +164,7 @@ h1 {
       justify-content: center;
       font-size: 18px;
       color: $white;
-      background-color: $bhs-red-m;
+      background-color: $bhs-red-l;
       opacity: 0.9;
       .bhs-main__nav__wrap {
         padding: 20px;
@@ -181,38 +180,52 @@ h1 {
       }
     }
     .bhs-main__box {
-      margin-top: 15vh;
-      box-shadow: 0px -50px 150px -15px $bhs-red-d;
-      border: 3px dashed white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $bhs-red-d;
       .bhs-main__box__header {
-        border: 3px dashed yellow;
+        border: 2px solid white;
         width: 100%;
         height: 15%;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         .bhs-main__box__header__info {
+          border: 2px solid blue;
+          width: inherit;
+          margin-right: 50px;
+          display: flex;
           font-size: 40px;
           .bhs-main__box__header__info__hashtag {
+            border: 2px solid black;
+            width: 40px;
+            padding: 5px 0 0 5px;
             color: $bhs-red-l;
             &:hover {
               color: $bhs-red-d;
             }
           }
-          // .bhs-main__box__header__info__title {
-          // }
+          .bhs-main__box__header__info__title {
+            width: 100%;
+            border: 2px solid black;
+          }
+          .bhs-main__box__header__info__director {
+            font-size: 14px;
+            border: 2px solid green;
+          }
         }
-        // .bhs-main__box__header__director {
-        // }
       }
       .bhs-main__box__movie {
-        border: 3px dashed green;
+        padding: 20px 0;
         display: flex;
+        justify-content: center;
         .bhs-main__box__movie__no {
-          // position: relative;
-          // top: 100px;
-          // right: 5px;
-          width: 55px;
+          position: relative;
+          top: 40px;
+          left: 45px;
+          width: 50px;
           height: 40px;
           display: flex;
           justify-content: center;
@@ -227,8 +240,13 @@ h1 {
             font-size: 24px;
           }
         }
-        // img {
-        // }
+        .bhs-main__box__movie__img {
+          display: flex;
+          width: 90%;
+          img {
+            width: 100%;
+          }
+        }
         .bhs-main__box__movie__vote {
           width: 50px;
           float: right;
@@ -241,27 +259,32 @@ h1 {
           }
         }
       }
-
       .bhs-main__box__footer {
-        border: 3px dashed blue;
+        padding: 0 60px 60px 60px;
         .bhs-main__box__footer__article {
+          margin-top: 20px;
         }
         .bhs-main__box__footer__by {
-          .bhs-main__box__footer__by__who {
-          }
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          // .bhs-main__box__footer__by__who {
+          // }
           .bhs-main__box__footer__by_rating {
-            display: flex;
-            justify-content: flex-end;
             color: $bhs-red-d;
           }
         }
         .bhs-main__box__footer__comment {
+          margin-top: 20px;
           display: flex;
           justify-content: space-between;
           color: $bhs-red-d;
-          .bhs-main__box__footer__comment__no {
-          }
+          // .bhs-main__box__footer__comment__no {
+          // }
           .bhs-main__box__footer__comment__leave {
+            padding: 0 0 3px 0;
+            border-bottom: 2px solid;
+            color: $bhs-red-d;
           }
         }
       }
