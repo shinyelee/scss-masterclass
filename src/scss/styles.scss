@@ -321,24 +321,41 @@ title,
 // rodic-davison-architects
 .rda-body {
   display: grid;
-  grid-template-columns: 1fr 3fr; // rda-logo : rda-main
+  grid-template-columns: 1fr 4fr; // rda-logo : rda-main
+  a:hover,
+  .rda-main__content--with-photo:hover {
+    color: blue;
+  }
   .rda-logo {
-    background-color: red;
+    border: 1px solid green;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
     a {
-      background-color: orangered;
       span {
-        background-color: orange;
+        color: gray;
       }
     }
   }
   .rda-main {
-    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // content : content
     .rda-main__nav {
-      background-color: yellowgreen;
+      border: 1px solid red;
+      grid-column: span 2;
+      height: 50px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       .rda-main__nav__ul {
-        background-color: skyblue;
+        display: flex;
         .rda-main__nav__ul__li {
-          background-color: cornflowerblue;
+          margin-right: 10px;
         }
       }
       // .rda-main__nav__mobile {
@@ -351,24 +368,22 @@ title,
       //   }
       // }
     }
-    .rda-main__article {
-      background-color: lavender;
+    .rda-main__content {
+      border: 1px solid blue;
+      padding: 20px 10px;
+      img {
+        border: 1px solid dodgerblue;
+        width: 520px;
+        height: auto;
+        margin: 10px 0;
+      }
       h2 {
-        background-color: thistle;
+        border: 1px solid dodgerblue;
+        margin: 10px 0;
       }
       p {
-        background-color: lightpink;
-      }
-    }
-    .rda-main__photo {
-      background-color: gainsboro;
-      img {
-        border: 3px dashed black;
-        width: 480px;
-        height: auto;
-      }
-      h2 {
-        background-color: gray;
+        border: 1px solid dodgerblue;
+        margin: 10px 0;
       }
     }
   }
