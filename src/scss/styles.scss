@@ -321,7 +321,7 @@ title,
 // rodic-davison-architects
 .rda-body {
   display: grid;
-  grid-template-columns: 1fr 4fr; // rda-logo : rda-main
+  grid-template-columns: 3fr 7fr; // rda-logo : rda-main
   a:hover,
   .rda-main__content--with-photo:hover {
     color: blue;
@@ -332,7 +332,7 @@ title,
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-weight: 600;
     color: black;
     a {
@@ -344,6 +344,7 @@ title,
   .rda-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr); // content : content
+    gap: 15px;
     .rda-main__nav {
       border: 1px solid red;
       grid-column: span 2;
@@ -370,19 +371,15 @@ title,
     }
     .rda-main__content {
       border: 1px solid blue;
-      padding: 20px 10px;
       img {
-        border: 1px solid dodgerblue;
-        width: 520px;
+        max-width: 100%;
         height: auto;
         margin: 10px 0;
       }
       h2 {
-        border: 1px solid dodgerblue;
         margin: 10px 0;
       }
       p {
-        border: 1px solid dodgerblue;
         margin: 10px 0;
       }
     }
