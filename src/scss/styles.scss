@@ -1,6 +1,9 @@
 @import "_variables";
 
 // all
+* {
+  box-sizing: border-box;
+}
 title,
 .uppercase {
   text-transform: uppercase;
@@ -317,50 +320,55 @@ title,
 
 // rodic-davison-architects
 .rda-body {
-  .rda-header {
-    border: 1px solid yellow;
-    .rda-header__logo {
-      border: 1px solid green;
-    }
-    .rda-header__nav {
-      border: 1px solid green;
-      .rda-header__nav__ul {
-        border: 1px solid blue;
-        .rda-header__nav__ul__li {
-        }
+  display: grid;
+  grid-template-columns: 1fr 3fr; // rda-logo : rda-main
+  .rda-logo {
+    background-color: red;
+    a {
+      background-color: orangered;
+      span {
+        background-color: orange;
       }
-      // .rda-header__nav__mobile {
-      //   border: 1px solid blue;
-      //   .rda-header__nav__mobile__menu {
-      //   }
-      //   .rda-header__nav__mobile__close {
-      //   }
-      // }
     }
   }
   .rda-main {
-    border: 1px solid yellow;
-    .rda-main__left {
-      border: 1px solid green;
-    }
-    .rda-main__right {
-      border: 1px solid green;
-      .rda-main__right__article {
-        border: 1px solid blue;
-        .rda-main__right__article__title {
-          border: 1px solid purple;
-        }
-        .rda-main__right__article__text {
-          border: 1px solid purple;
+    background-color: yellow;
+    .rda-main__nav {
+      background-color: yellowgreen;
+      .rda-main__nav__ul {
+        background-color: skyblue;
+        .rda-main__nav__ul__li {
+          background-color: cornflowerblue;
         }
       }
-      .rda-main__right__box {
-        .rda-main__right__box__img {
-          border: 1px solid purple;
-        }
-        .rda-main__right__box__text {
-          border: 1px solid purple;
-        }
+      // .rda-main__nav__mobile {
+      //   border: 1px solid red;
+      //   .rda-main__nav__mobile__menu {
+      //     border: 1px solid black;
+      //   }
+      //   .rda-main__nav__mobile__close {
+      //     border: 1px solid black;
+      //   }
+      // }
+    }
+    .rda-main__article {
+      background-color: lavender;
+      h2 {
+        background-color: thistle;
+      }
+      p {
+        background-color: lightpink;
+      }
+    }
+    .rda-main__photo {
+      background-color: gainsboro;
+      img {
+        border: 3px dashed black;
+        width: 480px;
+        height: auto;
+      }
+      h2 {
+        background-color: gray;
       }
     }
   }
