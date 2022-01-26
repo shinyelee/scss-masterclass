@@ -383,27 +383,60 @@
 // accueil-zoo
 .az-body {
   .az-header {
-    .as-header__left {
+    border: 1px solid blue;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; // left 2 : right 1
+    font-size: 28px;
+    font-weight: 600;
+    .az-header__left {
+      &:hover {
+        color: $white;
+        background-color: $az-gray;
+        .az-header__left__ul__li:first-child {
+          color: $black;
+        }
+      }
       .az-header__left__ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
         .az-header__left__ul__li {
+          padding: 0 20px;
         }
       }
     }
-    .as-header__right {
+    .az-header__right {
+      &:hover {
+        background-color: $az-gray;
+      }
       .az-header__right__ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
         .az-header__right__ul__li {
+          padding: 0 10px;
         }
       }
     }
-  }
-  .az-main {
-    .az-main__grid {
-      .az-main__grid__box {
-        .az-main__grid__box__content {
-          .az-main__grid__box__content__img {
+    .az-main {
+      // border: 2px solid blue;
+      .az-main__grid {
+        // border: 2px solid red;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .az-main__grid__box {
+          // border: 2px solid green;
+          .az-main__grid__box__content {
+            // border: 2px solid purple;
+            .az-main__grid__box__content__img {
+              // border: 2px solid yellow;
+            }
           }
-        }
-        .az-main__grid__box__title {
+          .az-main__grid__box__title {
+            // border: 2px solid purple;
+          }
         }
       }
     }
