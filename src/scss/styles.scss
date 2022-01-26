@@ -106,8 +106,14 @@
     justify-content: space-between;
     color: $bhs-red-l;
     background-color: $bhs-white;
+    @media (max-width: 720px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
     .bhs-header__title {
       margin: 60px 60px 0 60px;
+      font-size: 60px;
     }
     .bhs-header__subtitle {
       margin: 0 60px 60px 60px;
@@ -117,9 +123,6 @@
     .bhs-header__subtitle__3,
     .bhs-header__subtitle__4 {
       margin-top: 20px;
-    }
-    .bhs-header__title {
-      font-size: 60px;
     }
     .bhs-header__subtitle__1 {
       font-size: 24px;
@@ -372,6 +375,36 @@
       }
       p {
         margin: 10px 0;
+      }
+    }
+  }
+}
+
+// accueil-zoo
+.az-body {
+  .az-header {
+    .as-header__left {
+      .az-header__left__ul {
+        .az-header__left__ul__li {
+        }
+      }
+    }
+    .as-header__right {
+      .az-header__right__ul {
+        .az-header__right__ul__li {
+        }
+      }
+    }
+  }
+  .az-main {
+    .az-main__grid {
+      .az-main__grid__box {
+        .az-main__grid__box__content {
+          .az-main__grid__box__content__img {
+          }
+        }
+        .az-main__grid__box__title {
+        }
       }
     }
   }
