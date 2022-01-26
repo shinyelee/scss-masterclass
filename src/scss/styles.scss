@@ -11,9 +11,9 @@
 
 // index
 .index-body {
+  font-weight: 600;
   .header {
     font-size: 40px;
-    font-weight: 600;
     text-align: center;
     justify-self: center;
     height: 60px;
@@ -383,13 +383,15 @@
 // accueil-zoo
 .az-body {
   .az-header {
+    cursor: pointer;
     border: 1px solid blue;
     height: 50px;
     display: grid;
-    grid-template-columns: 2fr 1fr; // left 2 : right 1
+    grid-template-columns: repeat(3, 1fr); // left 2 : right 1
     font-size: 28px;
     font-weight: 600;
     .az-header__left {
+      grid-column: 1 / 3;
       &:hover {
         color: $white;
         background-color: $az-gray;
@@ -419,24 +421,29 @@
         }
       }
     }
-    .az-main {
-      // border: 2px solid blue;
-      .az-main__grid {
-        // border: 2px solid red;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        .az-main__grid__box {
-          // border: 2px solid green;
-          .az-main__grid__box__content {
-            // border: 2px solid purple;
-            .az-main__grid__box__content__img {
-              // border: 2px solid yellow;
-            }
-          }
-          .az-main__grid__box__title {
-            // border: 2px solid purple;
-          }
+  }
+  .az-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 33vh;
+    .az-main__box {
+      cursor: pointer;
+      height: 100%;
+      display: grid;
+      grid-template-rows: 10fr 1fr;
+      .az-main__box__img {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        overflow: hidden;
+      }
+      .az-main__bottom {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        .az-main__bottom__text {
+          font-size: 14px;
         }
       }
     }
