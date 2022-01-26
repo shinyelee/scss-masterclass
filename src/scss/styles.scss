@@ -53,7 +53,15 @@
       background-color: $tn-gold;
     }
     .accueil-zoo {
-      background-color: $az-gray;
+      color: $az-gray;
+      background-color: $white;
+      &:hover {
+        color: $white;
+        background-color: $az-gray;
+        h2 {
+          color: $black;
+        }
+      }
     }
     .schwartz-media {
       background-color: $sm-charcoal;
@@ -64,8 +72,8 @@
     .rodic-davidson-architects {
       background-color: $rda-blue;
       &:hover {
-        background-color: $white;
         color: $rda-blue;
+        background-color: $white;
       }
     }
     .beige {
@@ -78,13 +86,11 @@
       background-color: $csm-yellow;
     }
     .won-hundred {
-      background-color: $wh-black;
+      color: $wh-black;
+      background-color: $white;
     }
     .shinyelee {
-      color: $black;
-      img {
-        width: 280px;
-      }
+      background-color: $wh-black;
     }
   }
 }
