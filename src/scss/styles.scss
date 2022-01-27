@@ -11,8 +11,8 @@
 
 // index
 .index-body {
-  font-weight: 600;
   .header {
+    font-weight: 600;
     font-size: 40px;
     text-align: center;
     justify-self: center;
@@ -344,6 +344,8 @@
     height: 50px;
     padding: 10px;
     display: flex;
+    position: sticky;
+    top: 0;
     align-items: center;
     justify-content: flex-start;
     font-weight: 600;
@@ -361,8 +363,11 @@
       grid-column: span 2;
       height: 50px;
       display: flex;
+      position: sticky;
+      top: 0;
       align-items: center;
       justify-content: flex-start;
+      background-color: $white;
       .rda-main__nav__ul {
         display: flex;
         .rda-main__nav__ul__li {
