@@ -112,14 +112,9 @@
     justify-content: space-between;
     color: $bhs-red-l;
     background-color: $bhs-white;
-    @media (max-width: 720px) {
-      h1 {
-        font-size: 24px;
-      }
-    }
     .bhs-header__title {
       margin: 60px 60px 0 60px;
-      font-size: 60px;
+      font-size: 64px;
     }
     .bhs-header__subtitle {
       margin: 0 60px 60px 60px;
@@ -332,7 +327,7 @@
   .rda-main__content--with-photo:hover {
     color: $rda-blue;
   }
-  @media (max-width: 720px) {
+  @media (max-width: 800px) {
     .rda-logo {
       visibility: hidden;
     }
@@ -344,7 +339,7 @@
     height: 50px;
     padding: 10px;
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     align-items: center;
     justify-content: flex-start;
@@ -354,7 +349,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); // content : content
     gap: 15px;
-    @media (max-width: 1280px) {
+    @media (max-width: 1080px) {
       .rda-main__content {
         grid-column: 1 / 3;
       }
@@ -363,7 +358,7 @@
       grid-column: span 2;
       height: 50px;
       display: flex;
-      position: sticky;
+      position: fixed;
       top: 0;
       align-items: center;
       justify-content: flex-start;
@@ -395,12 +390,20 @@
 .az-body {
   .az-header {
     cursor: pointer;
-    border: 1px solid blue;
+    width: 100%;
     height: 50px;
     display: grid;
+    position: fixed;
+    top: 0;
     grid-template-columns: repeat(3, 1fr); // left 2 : right 1
     font-size: 28px;
     font-weight: 600;
+    background-color: $white;
+    @media (max-width: 960px) {
+      .hidden {
+        visibility: hidden;
+      }
+    }
     .az-header__left {
       grid-column: 1 / 3;
       &:hover {
@@ -434,16 +437,28 @@
     }
   }
   .az-main {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 33vh;
+    grid-auto-rows: 45vh;
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 960px) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 70vh;
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 50vh;
+    }
     .az-main__box {
       cursor: pointer;
       height: 100%;
       display: grid;
-      grid-template-rows: 10fr 1fr;
+      grid-template-rows: 12fr 1fr;
       .az-main__box__img {
-        min-width: 100%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center center;
