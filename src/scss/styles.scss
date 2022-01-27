@@ -49,41 +49,43 @@
         }
       }
     }
+    .rodic-davidson-architects {
+      color: $black;
+      background-color: $white;
+      &:hover {
+        h2 {
+          color: $white;
+          background-color: $rda-blue;
+        }
+        span {
+          color: $rda-blue;
+        }
+      }
+    }
+    .accueil-zoo {
+      background-color: $az-gray;
+      &:hover {
+        color: $white;
+        h2 {
+          color: $black;
+        }
+      }
+    }
+    .beige {
+      background-color: $b-nachhaltig;
+    }
     .paint-box {
       background-color: $pb-beige-d;
     }
     .ten-nineteen {
       background-color: $tn-gold;
     }
-    .accueil-zoo {
-      color: $az-gray;
-      background-color: $white;
-      &:hover {
-        color: $white;
-        background-color: $az-gray;
-        h2 {
-          color: $black;
-        }
-      }
-    }
+
     .schwartz-media {
       background-color: $sm-charcoal;
     }
     .tolv {
       background-color: $t-orange;
-    }
-    .rodic-davidson-architects {
-      background-color: $white;
-      color: $black;
-      &:hover {
-        h2,
-        span {
-          color: $rda-blue;
-        }
-      }
-    }
-    .beige {
-      background-color: $b-nachhaltig;
     }
     .donica-ida-design {
       background-color: $did-gray;
