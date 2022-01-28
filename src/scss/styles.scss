@@ -498,12 +498,16 @@
   height: 100vh;
   width: 100%;
   .b-header {
-    border: 1px solid black;
     height: 40px;
+    width: inherit;
     padding: 0 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: $white;
     .b-header__logo {
       font-size: 32px;
       font-weight: 600;
@@ -512,10 +516,16 @@
       .b-header__nav__ul {
         display: flex;
         .b-header__nav__ul__li {
+          margin: 6px;
+          display: flex;
+          align-items: center;
+          font-size: 20px;
           .circle {
-            width: 10px;
-            height: 10px;
-            background-color: blanchedalmond;
+            width: 15px;
+            height: 15px;
+            margin-right: 2px;
+            border-radius: 50%;
+            background-color: $b-mode;
           }
           &:last-child {
           }
