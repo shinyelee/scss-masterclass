@@ -493,7 +493,6 @@
 
 // beige
 .b-body {
-  height: 100vh;
   width: 100%;
   img {
     object-fit: cover;
@@ -504,7 +503,7 @@
     padding: 0 10px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -528,18 +527,15 @@
             border-radius: 50%;
             background-color: $b-mode;
           }
-          &:last-child {
-          }
         }
       }
     }
-    // .b-header__search {
-    // }
   }
   .b-grid {
-    margin-top: 50px;
+    width: inherit;
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: 500px;
     font-size: 14px;
     .b-grid__box {
@@ -563,7 +559,6 @@
       .b-grid__box__content {
         height: 64%;
         font-size: 18px;
-        font-weight: 600;
         &:hover {
           .b-visible {
             display: none;
@@ -576,9 +571,10 @@
             height: 100%;
             display: block;
             position: absolute;
-            left: 0;
             top: 0;
+            left: 0;
             z-index: 0;
+            overflow: hidden;
             background-image: url("https://source.unsplash.com/random/500x500");
             background-position: center center;
             background-size: cover;
