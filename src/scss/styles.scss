@@ -19,8 +19,9 @@
     font-size: 40px;
     text-align: center;
     justify-self: center;
-    height: 60px;
-    margin: 20px 0;
+    height: 50px;
+    color: $white;
+    background-color: $black;
   }
   .grid {
     display: grid;
@@ -52,6 +53,10 @@
     .rodic-davidson-architects {
       color: $black;
       background-color: $white;
+      ::selection {
+        background-color: $rda-blue;
+        color: $white;
+      }
       &:hover {
         h2 {
           color: $white;
@@ -330,6 +335,10 @@
 .rda-body {
   display: grid;
   grid-template-columns: 1fr 4fr; // rda-logo : rda-main
+  ::selection {
+    background-color: $rda-blue;
+    color: $white;
+  }
   a:hover,
   .rda-logo:hover,
   .rda-main__content--with-photo:hover {
