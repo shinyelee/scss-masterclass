@@ -117,7 +117,7 @@
     width: $bhs-width-left;
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     display: flex;
@@ -406,7 +406,6 @@
 // accueil-zoo
 .az-body {
   .az-header {
-    cursor: pointer;
     width: 100%;
     height: 50px;
     display: grid;
@@ -470,7 +469,6 @@
       grid-auto-rows: 50vh;
     }
     .az-main__box {
-      cursor: pointer;
       height: 100%;
       display: grid;
       grid-template-rows: 12fr 1fr;
@@ -497,6 +495,9 @@
 .b-body {
   height: 100vh;
   width: 100%;
+  img {
+    object-fit: cover;
+  }
   .b-header {
     height: 40px;
     width: inherit;
@@ -532,28 +533,28 @@
         }
       }
     }
-    .b-header__search {
-    }
+    // .b-header__search {
+    // }
   }
   .b-grid {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-auto-rows: 500px;
     font-size: 14px;
     .b-grid__box {
-      border: 1px solid black;
       height: inherit;
       display: flex;
+      position: relative;
       flex-direction: column;
       align-items: center;
-      border-top: 0;
-      cursor: pointer;
       .b-grid__box__top,
       .b-grid__box__bottom {
         width: 100%;
         height: 18%;
         padding: 20px;
         display: flex;
+        z-index: 1;
         justify-content: space-between;
       }
       .b-grid__box__bottom {
@@ -563,6 +564,26 @@
         height: 64%;
         font-size: 18px;
         font-weight: 600;
+        &:hover {
+          .b-visible {
+            display: none;
+          }
+          .b-invisible {
+            display: flex;
+          }
+          .b-invisible-photo {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            background-image: url("https://source.unsplash.com/random/500x500");
+            background-position: center center;
+            background-size: cover;
+          }
+        }
         .b-visible,
         .b-invisible {
           height: 100%;
@@ -577,7 +598,6 @@
           img {
             width: 60%;
             height: 67%;
-            object-fit: cover;
           }
           span {
             width: 80%;
@@ -588,7 +608,11 @@
           }
         }
         .b-invisible {
+          display: none;
           font-style: italic;
+        }
+        .b-invisible-photo {
+          display: none;
         }
       }
     }
