@@ -567,17 +567,19 @@
             display: flex;
           }
           .b-invisible-photo {
-            width: 100%;
-            height: 100%;
             display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
             overflow: hidden;
-            background-image: url("https://source.unsplash.com/random/500x500");
-            background-position: center center;
-            background-size: cover;
+            img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 0;
+              background-image: url("https://source.unsplash.com/random/500x500");
+              background-position: center center;
+              background-size: cover;
+            }
           }
         }
         .b-visible,
@@ -614,6 +616,27 @@
     }
     .b-mode {
       background-color: $b-mode;
+    }
+    .b-interior {
+      background-color: $b-interior;
+    }
+    .b-beauty {
+      background-color: $b-beauty;
+    }
+    .b-kultur {
+      background-color: $b-kultur;
+    }
+    .b-reisen {
+      background-color: $b-reisen;
+    }
+    .b-menschen {
+      background-color: $b-menschen;
+    }
+    .b-nachhaltig {
+      background-color: $b-nachhaltig;
+    }
+    .b-white {
+      background-color: $white;
     }
   }
 }
