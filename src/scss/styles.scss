@@ -709,3 +709,44 @@
     }
   }
 }
+
+// paint-box
+.pb-body {
+  li,
+  span {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .pb-header {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 1px solid green;
+    .pb-header__nav {
+      height: inherit;
+      margin: 0 50px;
+      display: flex;
+      justify-content: space-between;
+      .pb-header__nav__ul-left,
+      .pb-header__nav__ul,
+      .pb-header__nav__ul-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .pb-header__nav__ul-left__li:first-child {
+          margin-right: 45px;
+        }
+        .pb-header__nav__ul-right__li {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .pb-main {
+  }
+  .pb-footer {
+  }
+}
