@@ -39,9 +39,8 @@
       }
     }
     .best-horror-scenes {
-      background-color: $bhs-red-l;
+      background-color: $bhs-red-d;
       &:hover {
-        background-color: $bhs-red-d;
         img {
           box-shadow: 0px 15px 20px -5px $bhs-black;
         }
@@ -74,7 +73,18 @@
       }
     }
     .beige {
-      background-color: $b-nachhaltig;
+      background-color: $b-beauty;
+      .invisible {
+        display: none;
+      }
+      &:hover {
+        .visible {
+          display: none;
+        }
+        .invisible {
+          display: block;
+        }
+      }
     }
     .paint-box {
       background-color: $pb-beige-d;
@@ -82,7 +92,6 @@
     .ten-nineteen {
       background-color: $tn-gold;
     }
-
     .schwartz-media {
       background-color: $sm-charcoal;
     }
@@ -299,8 +308,6 @@
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
-            // .bhs-main__box__footer__by__who {
-            // }
             .bhs-main__box__footer__by_rating {
               text-align: end;
               color: $bhs-red-d;
@@ -311,8 +318,6 @@
             display: flex;
             justify-content: space-between;
             color: $bhs-red-d;
-            // .bhs-main__box__footer__comment__no {
-            // }
             .bhs-main__box__footer__comment__leave {
               text-align: end;
               a {
