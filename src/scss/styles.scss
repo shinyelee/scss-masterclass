@@ -750,12 +750,23 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          .pb-header__nav__ul-left__li:first-child {
-            margin-right: 45px;
+          .pb-header__nav__ul-left__li {
+            &:hover {
+              color: $pb-gray-l;
+            }
+            &:first-child {
+              padding: 24px 24px 24px 0;
+            }
+            &:last-child {
+              padding: 24px 0 24px 24px;
+            }
           }
           .pb-header__nav__ul-right__li {
             margin-left: 30px;
           }
+        }
+        .fas {
+          color: $pb-gray-l;
         }
       }
     }
