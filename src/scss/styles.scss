@@ -711,7 +711,7 @@
 }
 
 // paint-box
-@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
 .pb-body {
   width: 100%;
   height: 100%;
@@ -719,6 +719,16 @@
   flex-direction: column;
   align-items: center;
   color: #414141;
+  p {
+    margin: 30px 30px 60px 30px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+  em {
+    font-style: italic;
+  }
   li,
   span,
   button {
@@ -800,12 +810,6 @@
         height: 100%;
         object-fit: cover;
       }
-      p {
-        margin: 30px 30px 60px 30px;
-        font-family: "Gilda Display", serif;
-        font-size: 28px;
-        line-height: 150%;
-      }
       .pb-button {
         width: 240px;
         height: 55px;
@@ -866,19 +870,58 @@
         .pb-main__blog__item {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
+          .pb-main__blog__item__down {
+            padding: 40px;
+          }
         }
       }
       .pb-main__blog__item__down,
       .pb-main__shop-email {
-        border: 1px solid orange;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 30px;
         p {
           margin: 30px;
+        }
+      }
+      .pb-main__shop-email {
+        width: 80%;
+        padding: 30px 0 20px 0;
+        border-bottom: 1px solid $pb-gray-d;
+        p {
+          width: 100%;
+          margin: 30px 30px 40px 30px;
+        }
+        .pb-main__shop-email__input-box {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          input {
+            height: 45px;
+            flex-grow: 1;
+            font-size: 30px;
+            &::placeholder {
+              font-family: "Libre Baskerville", serif;
+              color: $pb-gray-l;
+            }
+          }
+          button {
+            flex-grow: 0;
+          }
+        }
+      }
+      .pb-main__insta {
+        width: 100%;
+        text-align: center;
+        p {
+          margin-top: 80px;
+          font-size: 36px;
+          a {
+            color: $pb-gray-l;
+          }
         }
       }
     }
@@ -886,6 +929,6 @@
   .pb-footer {
     width: 100%;
     height: 270px;
-    background-color: lightcoral;
+    background-color: $pb-beige-m;
   }
 }

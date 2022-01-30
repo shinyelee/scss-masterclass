@@ -123,3 +123,6 @@ button {
   overflow: visible;
   cursor: pointer;
 }
+input {
+  border: none;
+}
