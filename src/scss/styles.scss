@@ -799,7 +799,7 @@
         object-fit: cover;
       }
       p {
-        margin: 30px 30px 70px 30px;
+        margin: 30px 30px 60px 30px;
         font-family: "Gilda Display", serif;
         font-size: 28px;
         line-height: 150%;
@@ -843,15 +843,12 @@
         grid-template-columns: repeat(2, 1fr);
       }
       .pb-main__shop {
-        border: 3px solid green;
         margin-top: 80px;
         padding-bottom: 10px;
         .pb-main__shop__title {
-          border: 3px solid red;
           padding: 0;
         }
         .pb-main__shop__content {
-          border: 3px solid red;
           display: flex;
           .pb-main__shop__content__item {
             display: flex;
@@ -863,13 +860,8 @@
             span:last-child {
               color: $pb-gray-l;
             }
-            .pb-main__shop__content__item__img {
-              // img{
-              // }
-            }
-            .pb-main__shop__content__item__name {
-            }
             .pb-main__shop__content__item__button {
+              margin-top: 40px;
             }
           }
         }
