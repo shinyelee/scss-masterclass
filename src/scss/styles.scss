@@ -11,15 +11,6 @@
 
 // index
 .index-body {
-  .header {
-    font-weight: 600;
-    font-size: 40px;
-    text-align: center;
-    justify-self: center;
-    height: 50px;
-    color: $white;
-    background-color: $black;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
