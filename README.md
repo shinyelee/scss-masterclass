@@ -1,12 +1,12 @@
-# 한글 eng
+# scss-masterclass
 
 > 여러 웹사이트를 클론코딩한 웹 프로젝트
 
-![title_cover]()
+![scss-masterclass_cover](https://user-images.githubusercontent.com/68595933/194714313-b6a2182b-ad53-4bf7-bf72-520bd1493bc4.PNG)
 
 ## 시작
 
-- HTML, CSS로 구현한 웹퍼블리싱 프로젝트입니다.
+- HTML, SCSS로 구현한 웹퍼블리싱 프로젝트입니다.
 - [데모 사이트 바로가기][데모]
 
 ---
@@ -19,7 +19,7 @@
 
 ### 목표
 
-- HTML, CSS만으로 해당 웹사이트와 최대한 유사하게 만듭니다.
+- HTML, SCSS로 해당 웹사이트와 최대한 유사하게 만듭니다.
 
 ### 사용
 
@@ -28,21 +28,24 @@
 
 ---
 
-## 기능
+## 소개
 
-### 1. 시계 및 날짜
+![paintbox_h](https://user-images.githubusercontent.com/68595933/194713596-84ae965e-abfe-4e02-bf58-da61d4e78485.PNG)
 
-![clock](https://user-images.githubusercontent.com/68595933/151915109-69130133-01a3-4484-a1df-a18169055b8b.png)
+![paintbox_m](https://user-images.githubusercontent.com/68595933/194713597-a9334648-f3d8-42bf-8d7d-0b439a1a14a3.PNG)
 
-- [][]로 현재 시각을 받아옵니다.
+![paintbox_v](https://user-images.githubusercontent.com/68595933/194713599-9ea65e70-1c79-450b-8591-c983f01ea4f9.PNG)
 
-```html
+- 이미지를 클릭하면 클론코딩한 페이지로 이동합니다.
+- original site를 클릭하면 원본 사이트로 이동합니다.
 
-```
+![beige_h](https://user-images.githubusercontent.com/68595933/194713205-d5c90a50-7615-434a-9340-a0425f133dfb.PNG)
 
-```scss
+![beige_m](https://user-images.githubusercontent.com/68595933/194713206-072d1602-b5c8-47c4-913d-2546dc5d7364.PNG)
 
-```
+![beige_v](https://user-images.githubusercontent.com/68595933/194713203-8ec7f77b-41d1-426b-b210-2d68cfe120cd.PNG)
+
+- 모든 페이지를 반응형 웹으로 만들었습니다.
 
 ---
 
